@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Rubik+Dirt&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: forestgreen;
+  background-image:url(../img/bckgrnd.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Rubik Dirt', cursive;
+}
+header {
+grid-area: header;
+}
+
+h1 {
+  display: inline-flex;
+color: black;
+font-size: 80px
+;
+}
+
+nav {
+  max-width: 100%;
+  margin: auto;
+  background-color: black;
+  opacity: 90% ;
+  font-size: 20px;
+  margin-top: 50px;
+  border: solid green;
+}
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu > li > a {
+    display: flex;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    
+  }
+  .menu > li > a:hover {
+    color: green;
+  }
+  
+  main {
+    grid-area: main;
+    border: 2px black none;
+    width: 100%;
+    height: 100%;
+    font-size: 300%;
+    
+  }
+
+  
+ 
+  .info {
+    border: 2px red;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    grid-area: info;
+    margin: 10px;
+  }
+
+  .info > h3  {
+    text-align: center;
+    color: black;
+    grid-area: subTitulo;
+   }
+
+  .caja {
+    font-size: 50%;
+    border: 1px none black;
+    
+    
+}
+.caja img {
+  width: 350px;
+  height: 350px;
+}
+
+footer {
+  grid-area: footer;
+  max-width: 100%;
+  background-color: black;
+  opacity: 85% ;
+  font-size: 20px;
+  margin-top: 50px;
+  border: 3px solid green;
+}
+.footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer > div > a{
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+  footer > h3 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+  }
+  .redSocial a:hover{
+    color: green;
+  }
+  .icon{
+    font-size: 40px;
+  }
+
+  @media (max-width: 375px){
+    .caja img {
+      width: 100%;
+      height: 200px;
+    }
+   .menu{
+    display: block;
+    ;
+  }
+     .titulo {
+      font-size: xx-large
+     }
+    
+     .subTitulo {
+      font-size: xx-large;
+     }
+
+  }
+@media (min-width: 1024px){
+  .body {
+    display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+  ;
+  justify-content: center;
+}
+
+.info{
+  display: grid;
+  grid-template-areas: 
+  "subTitulo subTitulo subTitulo"
+  "caja caja caja"
+  "caja caja caja"
+  ;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+
+}
+
+input {
+  display: inline-flex;
+  
+}
+
+ 
+
+
+
